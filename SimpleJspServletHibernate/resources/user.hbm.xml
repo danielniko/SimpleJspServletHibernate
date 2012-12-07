@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.daniel.model.User" table="users">
+		<id name="userid" type="int" column="userid">
+			<generator class="increment" />
+		</id>
+		<property name="firstName">
+			<column name="firstname" />
+		</property>
+		<property name="lastName">
+			<column name="lastname" />
+		</property>
+		<property name="dob">
+			<column name="dob" />
+		</property>
+		<property name="email">
+			<column name="email" />
+		</property>
+	</class>
+</hibernate-mapping>
